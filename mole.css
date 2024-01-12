@@ -1,9 +1,5 @@
-/* Your code here */
-
-
-
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
-/* .sb {
+.sb {
   background-color: cornflowerblue;
   border-bottom: 1px solid #645DED;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -12,17 +8,54 @@
   font-size: 30px;
   margin-bottom: 50px;
   padding: 10px 20px;
-} */
+}
 
-/* .sb__mole-counter {
+.sb__mole-counter {
   flex: 1 0 0;
   text-align: right;
-} */
+}
 
-/* .sb__score-holder {
+.sb__score-holder {
   flex: 1 0 0;
-} */
+}
 
-/* .sb__game-over--hidden {
+.sb__game-over--hidden {
   display: none;
-} */
+}
+.garden {
+  height: 241px;
+  width: 320px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.garden_mole {
+  height: 178px;
+  width: 188px;
+  position: absolute;
+  left: 54px;
+  transition: margin-top;
+  transition-duration: 0.25s;
+}
+
+.garden_hill {
+  height: 110px;
+  width: 320px;
+  position: absolute;
+  bottom: 0;
+}
+
+.garden_mole_hidden {
+  margin-top: 241px;
+}
+
+.playing_field {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.wgs__mole-head--whacked {
+  background-color: red;
+}
